@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import logoAndreDecor from '../../public/logo.png';
+import fotoHome from '../../public/homeFoto.jpg';
+import sofaLavado from '../../public/sofaLavado.jpg';
+
 
 // Definición de colores para referencia rápida en comentarios:
 // Azul Íñigo Principal: #3E448A
@@ -52,10 +55,10 @@ export default function Home() {
 
       {/* --- HERO SECTION --- */}
       <section id="inicio" className="relative bg-gray-50 py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-20">
+        <div className="absolute inset-0 z-0 opacity-30">
           <Image 
-            src="/hero-muebles.jpg" // COLOCA UNA FOTO ELEGANTE DE SALA AQUÍ
-            alt="Interior elegante"
+            src={fotoHome} // COLOCA UNA FOTO ELEGANTE DE SALA AQUÍ
+            alt="Interior "
             fill
             className="object-cover"
             priority
@@ -104,7 +107,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
               <Image 
-                src="/lavado-antes-despues.jpg" // COLOCA IMAGEN ANTES/DESPUES AQUÍ
+                src={sofaLavado} // COLOCA IMAGEN ANTES/DESPUES AQUÍ
                 alt="Lavado de muebles antes y después"
                 width={800}
                 height={600}
