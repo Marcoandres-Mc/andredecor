@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -8,10 +8,10 @@ export default function page() {
       <section className="relative h-[60vh] flex items-center justify-center text-center bg-gradient-to-r from-[#3E448A] to-[#7A548E] text-white">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold">
-            Cortinas Modernas a Medida
+            Rollers Modernos a Medida
           </h1>
           <p className="mt-4 text-lg max-w-xl mx-auto">
-            Diseño, confección e instalación profesional en tu hogar.
+            Elegancia, control de luz y diseño minimalista para tu hogar u oficina.
           </p>
         </div>
       </section>
@@ -19,71 +19,101 @@ export default function page() {
       {/* DESCRIPCIÓN */}
       <section className="py-16 px-6 max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-[#3E448A]">
-          Dale un nuevo estilo a tu hogar
+          Soluciones modernas para tus ventanas
         </h2>
         <p className="mt-4 text-gray-600">
-          En Andre Decor ofrecemos cortinas personalizadas que se adaptan a tu espacio, 
-          combinando elegancia, funcionalidad y durabilidad.
+          Instalamos rollers personalizados que se adaptan perfectamente a tu espacio,
+          brindando comodidad, estilo y funcionalidad.
         </p>
       </section>
 
-      {/* TIPOS DE CORTINAS */}
+      {/* TIPOS DE ROLLERS */}
       <section className="py-16 px-6">
         <h2 className="text-3xl font-bold text-center text-[#3E448A] mb-10">
-          Tipos de Cortinas
+          Tipos de Rollers
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
+          {/* Roller Blackout */}
           <div className="bg-white rounded-2xl shadow-md p-6 text-center">
             <div className="h-40 bg-gray-200 rounded-xl mb-4"></div>
             <h3 className="text-xl font-semibold text-[#7A548E]">
-              Cortinas Blackout
+              Roller Blackout
             </h3>
             <p className="text-gray-600 mt-2">
-              Bloquean completamente la luz, ideales para dormitorios.
+              Bloqueo total de luz, ideal para dormitorios y salas de cine.
             </p>
           </div>
 
+          {/* Roller Screen */}
           <div className="bg-white rounded-2xl shadow-md p-6 text-center">
             <div className="h-40 bg-gray-200 rounded-xl mb-4"></div>
             <h3 className="text-xl font-semibold text-[#7A548E]">
-              Cortinas Translúcidas
+              Roller Screen
             </h3>
             <p className="text-gray-600 mt-2">
-              Permiten el paso de luz natural con estilo elegante.
+              Permite el paso de luz manteniendo privacidad y vista exterior.
             </p>
           </div>
 
+          {/* Roller Duo */}
           <div className="bg-white rounded-2xl shadow-md p-6 text-center">
             <div className="h-40 bg-gray-200 rounded-xl mb-4"></div>
             <h3 className="text-xl font-semibold text-[#7A548E]">
-              Cortinas Decorativas
+              Roller Duo (Zebra)
             </h3>
             <p className="text-gray-600 mt-2">
-              Diseños personalizados que resaltan tu espacio.
+              Alterna entre luz y privacidad con un diseño moderno y elegante.
             </p>
           </div>
 
         </div>
       </section>
 
-      {/* PROCESO */}
+      {/* BENEFICIOS */}
       <section className="bg-white py-16 px-6">
         <h2 className="text-3xl font-bold text-center text-[#3E448A] mb-10">
-          ¿Cómo trabajamos?
+          Beneficios de los Rollers
+        </h2>
+
+        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto text-center">
+
+          <div>
+            <p className="font-semibold text-[#7A548E]">✔ Control de luz</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-[#7A548E]">✔ Fácil limpieza</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-[#7A548E]">✔ Diseño moderno</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-[#7A548E]">✔ Instalación rápida</p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* PROCESO */}
+      <section className="py-16 px-6">
+        <h2 className="text-3xl font-bold text-center text-[#3E448A] mb-10">
+          Nuestro Proceso
         </h2>
 
         <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto text-center">
 
           <div>
             <div className="text-3xl font-bold text-[#7A548E]">1</div>
-            <p className="mt-2">Visita y medición</p>
+            <p className="mt-2">Medición en tu hogar</p>
           </div>
 
           <div>
             <div className="text-3xl font-bold text-[#7A548E]">2</div>
-            <p className="mt-2">Elección de diseño</p>
+            <p className="mt-2">Selección de material</p>
           </div>
 
           <div>
@@ -93,8 +123,23 @@ export default function page() {
 
           <div>
             <div className="text-3xl font-bold text-[#7A548E]">4</div>
-            <p className="mt-2">Instalación en casa</p>
+            <p className="mt-2">Instalación</p>
           </div>
+
+        </div>
+      </section>
+
+      {/* GALERÍA (placeholder para imágenes) */}
+      <section className="bg-gray-50 py-16 px-6">
+        <h2 className="text-3xl font-bold text-center text-[#3E448A] mb-10">
+          Trabajos Realizados
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          
+          <div className="h-52 bg-gray-200 rounded-xl"></div>
+          <div className="h-52 bg-gray-200 rounded-xl"></div>
+          <div className="h-52 bg-gray-200 rounded-xl"></div>
 
         </div>
       </section>
@@ -102,17 +147,17 @@ export default function page() {
       {/* CTA */}
       <section className="py-16 px-6 text-center">
         <h2 className="text-3xl font-bold text-[#3E448A]">
-          Solicita tu cotización
+          Cotiza tus rollers ahora
         </h2>
         <p className="mt-4 text-gray-600">
-          Escríbenos por WhatsApp y te asesoramos sin compromiso
+          Te asesoramos gratis y vamos hasta tu casa
         </p>
 
         <a 
           href="https://wa.me/51999999999"
           className="inline-block mt-6 bg-[#7A548E] text-white px-6 py-3 rounded-xl"
         >
-          Contactar por WhatsApp
+          Escribir por WhatsApp
         </a>
       </section>
 

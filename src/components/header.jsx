@@ -10,7 +10,7 @@ export default function Header() {
             {/* --- HEADER --- */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <Link href={`/home`} className="flex items-center gap-2 bg-white p-2 rounded-lg shadow-md hover:shadow-lg transition duration-300">
             <Image 
               src={logoAndreDecor} 
               alt="Andre Decor Logo" 
@@ -18,14 +18,19 @@ export default function Header() {
               height={50} 
               className="object-contain"
             />
-            <span className="text-3xl font-serif font-bold text-[#3E448A] tracking-tight">
+            <span className="text-2xl font-serif font-bold text-[#3E448A] tracking-tight">
               ANDRE <span className="text-[#7A548E]">DECOR</span>
             </span>
-          </div>
+          </Link>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-widest text-[#3E448A]">
-            {['Inicio', 'Servicios', 'Lavado', 'Galería', 'Contacto'].map(item => (
-              <Link key={item} href={`#${item.toLowerCase()}`} className="hover:text-[#7A548E] transition duration-300">
+            <Link href={'/quienes-somos'}>
+            <span className="hover:text-[#7A548E] transition duration-300">
+              Quienes Somos
+            </span>
+          </Link>
+            {['Cortinas','Rollers','Forro', 'Servicios', 'Lavado', 'Contacto'].map(item => (
+              <Link key={item} href={`/${item.toLowerCase()}`} className="hover:text-[#7A548E] transition duration-300">
                 {item}
               </Link>
             ))}
